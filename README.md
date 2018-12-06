@@ -1,4 +1,21 @@
 # 常用工具
+### 使用方法
+```
+    npm i -S @yujindong/validate;
+    
+    import { isPhoneNo, isCTCC } from "@yujindong/validate";
+    
+    isPhoneNo('18511249990'); // true
+    isPhoneNo('+8618511249990'); // true
+    isPhoneNo('+86-185-11249990'); // true
+    isPhoneNo('+86 185 11249990'); // true
+    isPhoneNo('+86 185-11249990'); // true
+    
+    isCTCC('18511249990'); // false
+    isCTCC('18931642779'); // true
+    
+    
+```
 ### 手机号码验证方法
 |method|params|return|description|
 | --- | --- | --- | --- |
