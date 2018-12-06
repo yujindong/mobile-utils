@@ -1,0 +1,52 @@
+{
+  "name": "@yujindong/validate",
+  "version": "1.0.0",
+  "description": "mobile utils",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "webpack-merge": "^4.1.4",
+    "webpack": "^4.27.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "babel-loader": "^8.0.4",
+    "chalk": "^2.4.1",
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "ora": "^3.0.0",
+    "rimraf": "^2.6.2",
+    "semver": "^5.6.0",
+    "shelljs": "^0.8.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yujindong/mobile-utils.git"
+  },
+  "keywords": [
+    "mobile",
+    "utils"
+  ],
+  "author": "yujindong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yujindong/mobile-utils/issues"
+  },
+  "homepage": "https://github.com/yujindong/mobile-utils#readme",
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  }
+}
