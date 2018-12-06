@@ -23,3 +23,4 @@
 | isCTCC | phoneNo: 需要验证的手机号码 | boolean | 是否是中国电信手机号码 |
 | isCMCC | phoneNo: 需要验证的手机号码 | boolean | 是否是中国移动手机号码 |
 | isCUCC | phoneNo: 需要验证的手机号码 | boolean | 是否是中国联通手机号码 |
+| isVirtual | phoneNo: 需要验证的手机号码 | boolean | 是否是中国虚拟运营商手机号码 |
