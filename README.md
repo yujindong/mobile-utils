@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/yujindong/mobile-utils.svg?branch=master)](https://travis-ci.org/yujindong/mobile-utils)
+
 # 常用工具
 ### 使用方法
 ```
