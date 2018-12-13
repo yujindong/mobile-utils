@@ -5,7 +5,7 @@
 ```
     npm i -S @yujindong/validate;
     
-    import { isPhoneNo, isCTCC } from "@yujindong/validate";
+    import { isPhoneNo, isCTCC, isEmail, isIDCard } from "@yujindong/validate";
     
     isPhoneNo('18511249990'); // true
     isPhoneNo('+8618511249990'); // true
@@ -16,6 +16,13 @@
     isCTCC('18511249990'); // false
     isCTCC('18931642779'); // true
     
+    // 邮箱格式验证
+    isEmail('aaaa.fjdal@xx.aa') // true
+    // 身份证格式验证
+    isIDCard('22012019850909121X') // true
+    isIDCard('22012019850909121A') // false
+    isIDCard('22012019850909121x') // true
+    isIDCard('220120198509091214') // true
     
 ```
 ### 手机号码验证方法
@@ -31,7 +38,7 @@
 | --- | --- | --- | --- |
 | isEmail | email: 要验证的邮箱| boolean | 验证是否符合邮箱格式 |
 
-## 验证中国身份证
+### 验证中国身份证
 
 |method|params|return|description|
 | --- | --- | --- | --- |
