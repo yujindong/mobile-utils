@@ -1,6 +1,6 @@
 {
   "name": "@yujindong/validate",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "mobile utils",
   "main": "dist/index.js",
   "files": [
@@ -28,7 +28,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "pub": "npm publish -access=publish --registry=https://registry.npmjs.org/ --focus"
   },
   "repository": {
     "type": "git",

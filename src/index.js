@@ -1,4 +1,12 @@
-import { isChinaPhoneNoExp, isCMCCExp, isCUCCExp, isCTCCExp, isVirtualExp } from "./config";
+import {
+  isChinaPhoneNoExp,
+  isCMCCExp,
+  isCUCCExp,
+  isCTCCExp,
+  isVirtualExp,
+  isEmailExp,
+  identityCardNumberExp
+} from "./config";
 
 function fixPhoneNo(phoneNo) {
   if (phoneNo) {
@@ -49,8 +57,27 @@ export function isCMCC (phoneNo) {
 /**
  * 虚拟运营商
  * @param phoneNo
+ * @return {boolean}
  */
 export function isVirtual (phoneNo) {
   const no = fixPhoneNo(phoneNo);
   return isVirtualExp.test(no);
+}
+
+/**
+ * 验证邮箱格式是否正确
+ * @param email
+ * @return {boolean}
+ */
+export function isEmail (email) {
+  return isEmailExp.test(email);
+}
+
+/**
+ * 验证是否是中国身份证号
+ * @param identityCardNumber
+ * @return {*}
+ */
+export function isIDCard (identityCardNumber) {
+  return identityCardNumberExp(identityCardNumber);
 }

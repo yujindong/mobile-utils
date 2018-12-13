@@ -53,3 +53,18 @@ export const isVirtualExp = /^((\+86)?(170)\d{8})$/;
  * @type {RegExp}
  */
 export const isChinaPhoneNoExp = /^((\+86)?(13\d|14[5-9]|15[0-35-9]|166|17[0-8]|18\d|19[8-9])\d{8})$/;
+
+/**
+ * 验证邮箱
+ * @type {RegExp}
+ */
+export const isEmailExp = /^[A-Za-z0-9]+[A-Za-z0-9\-_.]*@([A-Za-z0-9]+\.)+[A-Za-z0-9]*$/;
+
+/**
+ * 中国身份证
+ * 15位数字
+ * 17位数字加一位数字
+ * 17位数字加X或者x
+ * @type {RegExp}
+ */
+export const identityCardNumberExp = /^((\d{15})|((\d{17})(\d|X|x)))$/
