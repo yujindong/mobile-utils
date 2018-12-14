@@ -1,7 +1,7 @@
 {
   "name": "@yujindong/validate",
   "version": "1.0.6",
-  "description": "mobile utils",
+  "description": "mobile utils validate",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -37,7 +37,9 @@
   },
   "keywords": [
     "mobile",
-    "utils"
+    "utils",
+    "validate",
+    "phone"
   ],
   "author": "yujindong",
   "license": "MIT",
