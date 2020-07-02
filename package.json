@@ -1,8 +1,9 @@
 {
   "name": "@yujindong/validate",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "mobile utils validate",
   "main": "dist/index.js",
+  "typings": "index.d.ts",
   "files": [
     "dist"
   ],

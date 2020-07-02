@@ -8,7 +8,7 @@ import {
   identityCardNumberExp
 } from "./config";
 
-function fixPhoneNo(phoneNo) {
+function fixPhoneNo (phoneNo) {
   if (phoneNo) {
     return phoneNo.replace(/-|\s/g, '');
   }
@@ -53,7 +53,6 @@ export function isCMCC (phoneNo) {
   return isCMCCExp.test(no);
 }
 
-
 /**
  * 虚拟运营商
  * @param phoneNo
@@ -76,8 +75,8 @@ export function isEmail (email) {
 /**
  * 验证是否是中国身份证号
  * @param identityCardNumber
- * @return {*}
+ * @return {boolean}
  */
 export function isIDCard (identityCardNumber) {
-  return identityCardNumberExp(identityCardNumber);
+  return identityCardNumberExp.test(identityCardNumber);
 }

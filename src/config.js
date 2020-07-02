@@ -67,4 +67,4 @@ export const isEmailExp = /^[A-Za-z0-9]+[A-Za-z0-9\-_.]*@([A-Za-z0-9]+\.)+[A-Za-
  * 17位数字加X或者x
  * @type {RegExp}
  */
-export const identityCardNumberExp = /^((\d{15})|((\d{17})(\d|X|x)))$/
+export const identityCardNumberExp = /^((\d{15})|((\d{17})(\d|X|x)))$/;
